@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="basket.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+rel="stylesheet">
+</head>
+<body>
+    <div id="basketContainer">
+        <a href="index.html"><i class="fa-solid fa-arrow-right" id="arrow"></i></a>
+        <div id="div-left">
+            <img src="bottle_black-removebg-preview.png"alt="hello" id="img">
+        </div>
+        <div id="div-right">
+            <h1>Ocean Bottle
+                Obsidian Black (500ml)
+            </h1>
+            <p>
+                This bottle stops 1000 plastic bottles from entering the ocean.
+            </p>
+            <p id="prize">£30.00</p>
+            <h2>Colour</h2>          
+            <div id="colorSelect">
+                <button id="color1" onclick="colorChange1()"></button>
+                <button id="color2" onclick="colorChange2()"></button>
+                <button id="color3" onclick="colorChange3()"></button>
+                <button id="color4" onclick="colorChange4()"></button>
+            </div>
+            <div id="discountCode-select">
+                <label>10% OFF DISCOUNT CODE</label>
+                <input id="discountCode" placeholder="Discount Code Here">
+                <br>
+                <button id="apply-Discount" onclick="applyDiscount()">
+                    APPLY DISCOUNT
+                </button>
+            </div>
+            <div id="size-select">
+                <button id="size500" onclick="changeBc1()">500ml</button>
+                <button id="size1L" onclick="changeBC()">1L</button>
+            </div>
+            <div id="quantitySelector">
+                <button id="addBtn">+</button>
+                <p id="numberText">1</p>
+                <button id="subBtn">-</button>
+            </div>
+            <div id="buySection"></div>
+                <p id="totalPrice">TOTAL PRICE: £30</p>
+                <a href="#"><button id="buyBtn">BUY NOW</button></a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

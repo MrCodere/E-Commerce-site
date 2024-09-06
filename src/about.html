@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+     rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <a href="index.html"><i class="fa-solid fa-arrow-right" id="arrow"></i></a>
+    <div class="container">
+        <div class="coupone-code">
+            <img src="sb logo.jpg" class="logo" alt="logo">
+            <h3>10% OFF FOR YOUR BOTTLE PURCHASE</h3>
+            <div class="cpn-code">
+                <span id="code1">SIMPLEBOTTLE</span>
+                <span id="code2">COPY CODE</span>
+            </div>
+            <p>VALID TILL: 25 DEC, 2030</p>
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+        </div>
+    </div>
+    <div class="questions-section">
+        <h1>FREQUENTLY ASKED QUESTIONS</h1>
+        <select>
+            <option hidden selected>How long does it take to arrive</option>
+            <option>It takes approximately 3 working days if there is no interation</option>
+        </select>
+        <select>
+            <option hidden selected>What material is the bottle made of</option>
+            <option>It is made from recycled plastic that is harvested from the ocean</option>
+        </select>
+        <select>
+            <option hidden selected>How many tons of plastic have you harvested from the ocean soo far</option>
+            <option>We have managed to harvest 50 000kg of plastic from the ocean as off August 2024</option>
+        </select>
+        <select>
+            <option hidden selected>If i do not like the bottle when it arrives can i return it</option>
+            <option>If your bottle has not been damaged you can return it and we will offer you a refund within 10 
+                days of your bottle arriving
+            </option>
+        </select>
+    </div>
+    <div class="bottle-images">
+        
+    </div>
+    <script>
+
+        let cpnBtn = document.getElementById("code2");
+        let cpnCode = document.getElementById("code1");
+
+        cpnBtn.onClick = function(){
+            navigator.clipboard.writeText(cpnCode.innerHTML);
+        }
+
+    </script>
+</body>
+</html>
